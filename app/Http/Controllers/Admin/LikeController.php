@@ -67,7 +67,7 @@ class LikeController extends Controller
      */
     public function create()
     {
-        return view('admin.like.create');
+        return view('admin.like.create')->with('likecategories',$this->likecategory->get());
     }
 
     /**
