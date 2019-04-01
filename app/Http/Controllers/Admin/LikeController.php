@@ -5,15 +5,13 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\AddPoll;
-use App\Http\Requests\Admin\PollRequest;
-use phpDocumentor\Reflection\Types\Integer;
 
-class PollController extends Controller
+class LikeController extends Controller
 {
-    protected $pollcontroller;
+    protected $likecontroller;
     public function __construct()
     {
-        $this->pollcontroller = new AddPoll();
+        $this->likecontroller= new AddPoll();
     }
 
     /**
@@ -21,10 +19,11 @@ class PollController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        $polls=$this->pollcontroller->get();
-        return view('admin.poll.index')->with('polls',$polls);
+        $like_result=$this->likecontroller->get();
+        return view('admin.like.index')->with('likecontrollers',$like_result);
     }
 
     /**
@@ -56,8 +55,7 @@ class PollController extends Controller
      */
     public function show($id)
     {
-        $poll_result = $this->pollcontroller->where('id',$id)->get();
-        return view('admin.poll.show')->with('polls',$poll_result);
+        //
     }
 
     /**
@@ -91,6 +89,6 @@ class PollController extends Controller
      */
     public function destroy($id)
     {
-
+        //
     }
 }

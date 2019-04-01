@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">შეფასება</div>
+                    <div class="card-header">შეფასება მომხრაბელების მიერ</div>
                     <div class="card-body">
                         <table class="table table-bordered">
                             <thead>
@@ -27,7 +27,7 @@
                                     <td>
                                         <a href="{{route('admin.poll.show',$poll->id)}}" class="btn btn-success btn-sm"><i class="fa fa-eye" aria-hidden="true"></i></a>
                                         <a href="" class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                        <a href="" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                        <a href="{{route('admin.poll.destroy',$poll->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                                 @endforeach

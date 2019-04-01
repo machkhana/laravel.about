@@ -19,4 +19,5 @@ Route::group(['middleware' => ['web', 'auth'], 'prefix' => 'admin', 'as' => 'adm
     Route::get('/', 'Admin\HomeController@index')->name('dashboard');
     Route::resource('/region','Admin\RegionController');
     Route::resource('/poll','Admin\PollController');
+    Route::resource('/like','Admin\LikeController');
 });

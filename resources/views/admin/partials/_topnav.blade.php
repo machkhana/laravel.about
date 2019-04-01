@@ -5,10 +5,10 @@
         <!-- Links -->
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.region.index')}}">რეგიონები</a>
+                <a class="nav-link" href="{{route('admin.poll.index')}}">მომხმარებლები</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{route('admin.poll.index')}}">შეფასება</a>
+                <a class="nav-link" href="{{route('admin.like.index')}}">შეფასება/მოწონება</a>
             </li>
             <!-- Dropdown -->
             @include('admin.partials._topmenu')

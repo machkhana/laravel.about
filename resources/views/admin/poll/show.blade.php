@@ -4,10 +4,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">შეფასება</div>
+                    @foreach($polls as $poll)
+                    <div class="card-header">დამ. თარიღი: {{substr($poll->created_at,0,10)}}</div>
                     <div class="card-body">
-                        @foreach($polls as $poll)
-                        <p>დამ. თარიღი: {{substr($poll->created_at,0,10)}}</p>
                         <p>სახელი: {{$poll->username}}</p>
                         <p>გვარი: {{$poll->surname}}</p>
                         <p>მობილური: {{$poll->mobile}}</p>
@@ -37,8 +36,8 @@
                             <div class="col-sm-3"><i class="fa fa-{{ ($poll->likegorgia_14 == 1)? 'check-square-o':'square-o' }}" aria-hidden="true"></i> ტექსტილი</div>
                             <div class="col-sm-3"><i class="fa fa-{{ ($poll->likegorgia_15 == 1)? 'check-square-o':'square-o' }}" aria-hidden="true"></i> სხვა</div>
                         </div>
-                        @endforeach
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
