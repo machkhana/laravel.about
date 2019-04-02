@@ -21,27 +21,15 @@ class PollRequest extends FormRequest
     {
         return [
             'sex'           => 'required',
+            'idnumber'      => 'required',
             'username'      => 'required',
             'surname'       => 'required',
             'birthday'      => 'required',
             'address'       => 'required',
             'mobile'        => 'required',
             'repair'        => 'required',
-            'likegorgia_1'  => 'int',
-            'likegorgia_2'  => 'int',
-            'likegorgia_3'  => 'int',
-            'likegorgia_4'  => 'int',
-            'likegorgia_5'  => 'int',
-            'likegorgia_6'  => 'int',
-            'likegorgia_7'  => 'int',
-            'likegorgia_8'  => 'int',
-            'likegorgia_9'  => 'int',
-            'likegorgia_10' => 'int',
-            'likegorgia_11' => 'int',
-            'likegorgia_12' => 'int',
-            'likegorgia_13' => 'int',
-            'likegorgia_14' => 'int',
-            'likegorgia_15' => 'int'
+            'cat_ids'       => 'required|array',
+            'cat_ids.*'     => 'exists:likecategories,id'
         ];
     }
 }

@@ -47,6 +47,15 @@
                 </div>
                 <div class="tab">
                     <input name="sendfeedback" type="hidden"/>
+                    <h3>პირადი ნომერი</h3>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <p><input placeholder=""  name="idnumber" class="textform" {{old('idnumber')}}></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input name="sendfeedback" type="hidden"/>
                     <h3>თქვენი სახელი / გვარი</h3>
                     <p><input placeholder="სახელი" name="username" class="textform" {{old('username')}}></p>
                     <p><input placeholder="გვარი" name="surname" class="textform" {{old('surname')}}></p>
@@ -104,51 +113,11 @@
                 <div class="tab">
                     <h3>რა მოგეწონათ გორგიაში ?</h3>
                     <div data-toggle="buttons">
+                        @foreach($likeresults as $likeresult)
                         <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_1" value="1" type="checkbox" autocomplete="off"> აბაზანა/კერამიკა
+                            <input name="likegorgia" value="{{$likeresult->id}}" type="checkbox" autocomplete="off"> {{$likeresult->catname}}
                         </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_2" value="1" type="checkbox"  autocomplete="off"> სამშენებლო
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_3" value="1" type="checkbox"  autocomplete="off"> გათბობა
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_4" value="1" type="checkbox"  autocomplete="off"> ხელსაწყოები
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_5" value="1" type="checkbox"  autocomplete="off"> ბაღი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_6" value="1" type="checkbox"  autocomplete="off"> ელექტროობა
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_7" value="1" type="checkbox"  autocomplete="off"> ლამინატი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_8" value="1" type="checkbox"  autocomplete="off"> კარ-ფანჯარა
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_9" value="1" type="checkbox"  autocomplete="off"> შპალერი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_10" value="1" type="checkbox"  autocomplete="off"> ლაქ საღებავები
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_11" value="1" type="checkbox"  autocomplete="off"> საყოფაცხოვრებო
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_12" value="1" type="checkbox"  autocomplete="off"> სახურავი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_13" value="1" type="checkbox"  autocomplete="off"> ავეჯი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_14" value="1" type="checkbox"  autocomplete="off"> ტექსტილი
-                        </label>
-                        <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia_15" value="1" type="checkbox"  autocomplete="off"> სხვა
-                        </label>
+                        @endforeach
                     </div>
                 </div>
                 <div style="overflow:auto;">
@@ -158,6 +127,7 @@
                     </div>
                 </div>
                 <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
                     <span class="step"></span>
                     <span class="step"></span>
                     <span class="step"></span>

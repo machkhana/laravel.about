@@ -16,19 +16,19 @@ class PollController extends Controller
         $this->pollrequest = new AddPoll();
     }
     public function store(PollRequest $request){
-        //DB::beginTransactio();
+        //DB::beginTransaction();
         try {
             $pollreq=$request->toArray();
-            $this->pollrequest->create($pollreq);
+            $addPoll = AddPoll::create($pollreq);
 
             //DB::commit();
             return redirect()->route('home');
         } catch (\Exception $e) {
-            DB::rollback();
-            return redirect(route('home'));
+            //DB::rollback();
+            //return redirect(route('home'));
             //return('informacia bazashi ver damatda');
             //$pollreq=$request->toArray();
-            //dd($e->getMessage());
+            dd($e->getMessage());
         }
     }
 }
