@@ -115,7 +115,7 @@
                     <div data-toggle="buttons">
                         @foreach($likeresults as $likeresult)
                         <label class="btn btn-primary mybuttons">
-                            <input name="likegorgia" value="{{$likeresult->id}}" type="checkbox" autocomplete="off"> {{$likeresult->catname}}
+                            <input name="cat_id[]" value="{{$likeresult->id}}" type="checkbox" autocomplete="off"> {{$likeresult->catname}}
                         </label>
                         @endforeach
                     </div>

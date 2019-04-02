@@ -2,6 +2,7 @@
 
 namespace App\Model\Web;
 
+use App\Model\LikeResult;
 use Illuminate\Database\Eloquent\Model;
 
 class AddLike extends Model
@@ -13,7 +14,7 @@ class AddLike extends Model
         'sort'
     ];
 
-    public function polls() {
-        return $this->belongsToMany(AddPoll::class, 'likepollresults', 'poll_id', 'cat_id');
+    public function results() {
+        return $this->hasMany(LikeResult::class, 'cat_id');
     }
 }

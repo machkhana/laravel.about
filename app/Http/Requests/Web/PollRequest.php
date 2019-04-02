@@ -28,8 +28,8 @@ class PollRequest extends FormRequest
             'address'       => 'required',
             'mobile'        => 'required',
             'repair'        => 'required',
-            'cat_ids'       => 'required|array',
-            'cat_ids.*'     => 'exists:likecategories,id'
+            'cat_id'        => 'required|array',
+            'cat_id.*'      => 'exists:likecategories,id'
         ];
     }
 }

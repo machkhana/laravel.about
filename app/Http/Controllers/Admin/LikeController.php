@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Model\Admin\AddLikes;
+use App\Model\LikeResult;
+use App\Model\Web\AddLike;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\AddPoll;
@@ -27,9 +29,10 @@ class LikeController extends Controller
     {
         //$like_result=$this->likecontroller->get();
        // $id = '1';
-        $likeresults=$this->likecategory->get();
+        $likes = AddLike::all();
+
         return view('admin.like.index')
-            ->with('likeresults',$likeresults);
+            ->with('likes',$likes);
     }
 
     /**
