@@ -2,6 +2,8 @@
 
 namespace App\Model\Admin;
 
+//use App\Model\LikeResult;
+use App\Model\Admin\AddLikes;
 use Illuminate\Database\Eloquent\Model;
 
 class AddPoll extends Model
@@ -18,4 +20,7 @@ class AddPoll extends Model
         'mobile',
         'repair'
     ];
+    public function likecageory(){
+        return $this->hasMany( AddLikes::class);
+    }
 }
