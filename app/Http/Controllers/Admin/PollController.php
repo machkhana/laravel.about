@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Model\Admin\AddPoll;
 use App\Model\Web\AddLike;
-use App\Model\Admin\AddLikes;
 use App\Model\LikeResult;
 use App\Http\Requests\Admin\PollRequest;
 use phpDocumentor\Reflection\Types\Integer;
@@ -63,7 +62,7 @@ class PollController extends Controller
 
         $poll_result = $this->pollcontroller->where('id',$id)->get();
         return view('admin.poll.show')
-            ->with('likepollresult',LikeResult::where('poll_id',$id)->get())
+            ->with('likecategories',AddLike::all())
             ->with('polls',$poll_result);
     }
 

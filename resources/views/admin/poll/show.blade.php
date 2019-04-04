@@ -21,7 +21,7 @@
                         </div>
                         <div class="row">
                             @foreach($likecategories as $likecategory)
-                                <div class="col-sm-3"><i class="fa fa-'check-square-o':'square-o'" aria-hidden="true"></i> {{ $likecategory->catname }}</div>
+                                {{$likecategory->cat_it}}<div class="col-sm-3"><i class="fa fa-{{($poll->id == $likecategory->poll_id)?'check-square-o':'square-o'}}" aria-hidden="true"></i> {{ $likecategory->catname}}</div>
                             @endforeach
                         </div>
                     </div>
