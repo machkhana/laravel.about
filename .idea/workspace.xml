@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04cb55ad-0a9c-4724-9089-d434c33cc6fc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/Web/AddLike.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Web/AddLike.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/poll/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/poll/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +21,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/like/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
+            <state relative-caret-position="522">
               <caret line="29" column="103" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="103" />
             </state>
           </provider>
@@ -30,7 +30,7 @@
       <file leaf-file-name="LikeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LikeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="450">
               <caret line="31" column="29" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="29" />
               <folding>
                 <element signature="e#46#75#0#PHP" expanded="true" />
@@ -42,11 +42,8 @@
       <file leaf-file-name="LikeResult.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Model/LikeResult.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="216">
               <caret line="13" column="56" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="56" />
-              <folding>
-                <element signature="e#29#55#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +51,8 @@
       <file leaf-file-name="AddLike.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Model/Web/AddLike.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+            <state relative-caret-position="126">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding>
                 <element signature="e#33#58#0#PHP" expanded="true" />
               </folding>
@@ -63,20 +60,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/poll/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+            <state relative-caret-position="396">
+              <caret line="22" column="69" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PollController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PollController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="64" column="43" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="43" />
+              <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
               <folding>
                 <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
@@ -108,7 +114,6 @@
         <option value="$PROJECT_DIR$/resources/views/web/partials/_header.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PollController.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_31_083302_create_table_addpoll.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_03_31_084815_create_addpoll_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/Admin/PollRequest.php" />
@@ -146,9 +151,10 @@
         <option value="$PROJECT_DIR$/resources/views/admin/poll/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Model/Admin/AddPoll.php" />
         <option value="$PROJECT_DIR$/app/Model/LikeResult.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php" />
+        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Model/Web/AddLike.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/poll/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php" />
       </list>
     </option>
   </component>
@@ -258,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -388,6 +393,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,11 +439,12 @@
       <workItem from="1554103660130" duration="30347000" />
       <workItem from="1554183686972" duration="19355000" />
       <workItem from="1554358700275" duration="14434000" />
+      <workItem from="1554406224188" duration="817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95738000" />
+    <option name="totallyTimeSpent" value="96555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1928" height="1060" extended-state="6" />
@@ -446,16 +453,16 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.16867469" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657082" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2683706" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -478,7 +485,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Admin/RegionRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -631,12 +637,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../laravel.local/app/Http/Controllers/Gallerycontroller.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../GorgiaGuide/app/Models/RepairType.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../laravel.local/app/Http/Controllers/Gallerycontroller.php" />
+    <entry file="file://$PROJECT_DIR$/../GorgiaGuide/app/Models/RepairType.php" />
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Web/PollRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -683,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2907">
           <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,9 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="e#33#58#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -734,29 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <element signature="e#63#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="64" column="43" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="43" />
-          <folding>
-            <element signature="e#46#74#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Model/LikeResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="56" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <element signature="e#29#55#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,14 +739,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/like/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="522">
           <caret line="29" column="103" selection-start-line="29" selection-start-column="96" selection-end-line="29" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LikeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="450">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="29" />
           <folding>
             <element signature="e#46#75#0#PHP" expanded="true" />
@@ -784,20 +754,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Model/LikeResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/poll/show.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="69" selection-start-line="22" selection-start-column="56" selection-end-line="22" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Model/Web/AddLike.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        <state relative-caret-position="126">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding>
             <element signature="e#33#58#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/poll/show.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PollController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        <state relative-caret-position="440">
+          <caret line="64" column="12" lean-forward="true" selection-start-line="64" selection-start-column="12" selection-end-line="64" selection-end-column="12" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
