@@ -14,10 +14,9 @@ class CreateLikepollresultsTable extends Migration
     public function up()
     {
         Schema::create('likepollresults', function (Blueprint $table) {
-            $table->bigIncrements('id');
             $table->unsignedBigInteger('poll_id');
             $table->unsignedBigInteger('cat_id');
-
+            $table->primary(['poll_id', 'cat_id']);
             $table->foreign('poll_id')->references('id')->on('addpolls');
             $table->foreign('cat_id')->references('id')->on('likecategories');
         });

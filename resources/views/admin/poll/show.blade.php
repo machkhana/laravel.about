@@ -20,8 +20,16 @@
                             <h4>რა მოეწონა გორგიაში</h4>
                         </div>
                         <div class="row">
+
                             @foreach($likecategories as $likecategory)
+<<<<<<< HEAD
                                 {{$likecategory->poll_id}}<div class="col-sm-3"><i class="fa fa-{{($poll->id == $likecategory->poll_id)?'check-square-o':'square-o'}}" aria-hidden="true"></i> {{ $likecategory->catname}}</div>
+=======
+                                <div class="col-sm-3">
+                                    <i class="fa {{($likecategory->results->where('poll_id', $poll->id)->first() !== null) ? 'fa-check-square-o' : 'fa-square-o'}}" aria-hidden="true"></i>
+                                    {{ $likecategory->catname}}
+                                </div>
+>>>>>>> 67f49d8ffafdd6b1bc9bee497c7cce086c2634d3
                             @endforeach
                         </div>
                     </div>

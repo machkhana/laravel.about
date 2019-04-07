@@ -9,6 +9,8 @@ use App\Model\Web\AddLike;
 use App\Model\LikeResult;
 use App\Http\Requests\Admin\PollRequest;
 use phpDocumentor\Reflection\Types\Integer;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
 class PollController extends Controller
 {
@@ -62,7 +64,7 @@ class PollController extends Controller
 
         $poll_result = $this->pollcontroller->where('id',$id)->get();
         return view('admin.poll.show')
-            ->with('likecategories',AddLike::all())
+            ->with('likecategories',$this->like->all())
             ->with('polls',$poll_result);
     }
 

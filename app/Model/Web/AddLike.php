@@ -17,4 +17,7 @@ class AddLike extends Model
     public function results() {
         return $this->hasMany(LikeResult::class, 'cat_id', 'poll_id');
     }
+    public function pollresult(){
+        return $this->hasMany(AddPoll::class, 'id');
+    }
 }

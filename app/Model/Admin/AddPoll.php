@@ -20,7 +20,8 @@ class AddPoll extends Model
         'mobile',
         'repair'
     ];
-    public function likecageory(){
-        return $this->hasMany( AddLikes::class);
+
+    public function likecageories(){
+        return $this->belongsToMany( AddLikes::class, 'likepollresults', 'poll_id', 'cat_id');
     }
 }
