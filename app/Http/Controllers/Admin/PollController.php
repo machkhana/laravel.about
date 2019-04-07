@@ -62,7 +62,7 @@ class PollController extends Controller
 
         $poll_result = $this->pollcontroller->where('id',$id)->get();
         return view('admin.poll.show')
-            ->with('likecategories',AddLike::all())
+            ->with('likecategories',$this->like->all())
             ->with('polls',$poll_result);
     }
 

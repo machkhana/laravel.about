@@ -9,8 +9,10 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <!-- Styles -->
+    <link href="{{ asset('css/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('css/mystyle.css')}}" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <link href="{{asset('css/datatables/dataTables.bootstrap.css')}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -26,6 +28,7 @@
 </main>
 </div>
 <script src="{{ asset('js/app.js')}}"></script>
+<script src="{{asset('js/jquery-1.10.2.min.js')}}"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="{{asset('js/plugins/datatables/jquery.dataTables.js')}}" type="text/javascript"></script>
 <script src="{{asset('js/plugins/datatables/dataTables.bootstrap.js')}}" type="text/javascript"></script>
