@@ -17,6 +17,7 @@ Route::post('/addpoll','Web\PollController@store')->name('addpoll');
 Auth::routes();
 Route::group(['middleware' => ['web', 'auth'], 'prefix' => 'admin', 'as' => 'admin.'], function() {
     Route::get('/', 'Admin\HomeController@index')->name('dashboard');
+    Route::get('/export','Admin\ExcellController@export')->name('export');
     Route::resource('/region','Admin\RegionController');
     Route::resource('/poll','Admin\PollController');
     Route::resource('/like','Admin\LikeController');
