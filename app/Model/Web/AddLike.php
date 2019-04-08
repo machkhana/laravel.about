@@ -13,7 +13,6 @@ class AddLike extends Model
         'catname',
         'sort'
     ];
-
     public function results() {
         return $this->hasMany(LikeResult::class, 'cat_id');
     }

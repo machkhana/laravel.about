@@ -29,7 +29,6 @@
                             </div>
                         </form>
                     </div>
-
                     <hr>
                     <div class="card-body">
                         <table class="table table-bordered">
@@ -43,7 +42,6 @@
                             <tbody>
                             @foreach($likecategories as $likecat)
                                 <tr>
-
                                     <td>{{$likecat->catname}}</td>
                                     <td>{{$likecat->sort}}</td>
                                     <td>
@@ -66,7 +64,7 @@
                                             <form action="{{route('admin.like.update',$likecat->id)}}" method="POST">
                                             <div class="modal-body">
                                                 {{csrf_field()}}
-                                                {{method_field('POST')}}
+                                                {{method_field('PUT')}}
                                                 <div >
                                                     <div class="form-group">
                                                         <div class="col-sm-12">

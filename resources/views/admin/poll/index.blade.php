@@ -4,8 +4,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">შეფასება მომხრაბელების მიერ
-                        <a href="{{ route('admin.export') }}" class="btn btn-success">Export to .xlsx</a>
+                    <div class="card-header">
+                        შეფასება მომხრაბელების მიერ
+                        <a href="{{ route('admin.export') }}" class="btn btn-success float-right">Export to xlsx</a>
                     </div>
                     <div class="card-body table-responsive">
                         <table id="example" class="table table-bordered">

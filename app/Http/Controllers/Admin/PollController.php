@@ -32,39 +32,6 @@ class PollController extends Controller
         return view('admin.poll.index')->with('polls',$polls);
     }
 
-    public function export(){
-        $poll=AddPoll::all();
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', 'Id');
-        $sheet->setCellValue('B1', 'სქესი');
-        $sheet->setCellValue('C1', 'პირ. ნომერი');
-        $sheet->setCellValue('D1', 'სახელი');
-        $sheet->setCellValue('E1', 'გვარი');
-        $sheet->setCellValue('F1', 'დაბ. თარიღი');
-        $sheet->setCellValue('G1', 'მისამართი');
-        $sheet->setCellValue('H1', 'მობილური');
-        $sheet->setCellValue('I1', 'მიმდ. რემონტი');
-        $rows = 2;
-        foreach($poll as $polls){
-            $sheet->setCellValue('A' . $rows, $polls['id']);
-            $sheet->setCellValue('B' . $rows, $polls['sex']);
-            $sheet->setCellValue('C' . $rows, $polls['idnumber']);
-            $sheet->setCellValue('D' . $rows, $polls['username']);
-            $sheet->setCellValue('E' . $rows, $polls['surname']);
-            $sheet->setCellValue('F' . $rows, $polls['birthday']);
-            $sheet->setCellValue('G' . $rows, $polls['address']);
-            $sheet->setCellValue('H' . $rows, $polls['mobile']);
-            $sheet->setCellValue('I' . $rows, $polls['repair']);
-            $rows++;
-        }
-        $fileName = "export_users.xlsx";
-        $writer = new Xlsx($spreadsheet);
-        $writer->save("export/".$fileName);
-        header("Content-Type: application/vnd.ms-excel");
-        return redirect(url('/')."/export/".$fileName);
-    }
-
     /**
      * Show the form for creating a new resource.
      *

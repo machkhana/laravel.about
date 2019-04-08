@@ -95,9 +95,15 @@ class LikeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(LikeRequest $request, $id)
     {
-        //
+        try {
+            $addlikecat = $request->toArray();
+            $this->likecategory->find($id)->update($addlikecat);
+            return redirect()->route('admin.like.create');
+        } catch (\Exception $e) {
+            return redirect(route('admin.like.create'));
+        }
     }
 
     /**
