@@ -114,6 +114,7 @@ class LikeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $this->likecategory->find($id)->delete();
+        return redirect()->route('admin.like.create');
     }
 }

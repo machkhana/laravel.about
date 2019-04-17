@@ -12,7 +12,7 @@
     <link href="{{ asset('css/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{asset('css/mystyle.css')}}" rel="stylesheet">
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
+    {{--<link href="{{asset('css/style.css')}}" rel="stylesheet">--}}
     <link href="{{asset('css/datatables/dataTables.bootstrap.css')}}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

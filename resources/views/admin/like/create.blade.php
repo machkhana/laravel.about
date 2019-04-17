@@ -44,11 +44,14 @@
                                 <tr>
                                     <td>{{$likecat->catname}}</td>
                                     <td>{{$likecat->sort}}</td>
-                                    <td>
+                                    <td class="d-flex">
                                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal-{{$likecat->id}}">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                     </button>
-                                    <a href="{{route('admin.like.destroy',$likecat->id)}}" class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    <form method="post" action="{{route('admin.like.destroy',$likecat->id)}}"  >
+                                        {{csrf_field()}} {{method_field('DELETE')}}
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    </form>
                                     </td>
                                 </tr>
                                 <!-- The Modal -->
